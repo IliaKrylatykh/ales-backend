@@ -35,6 +35,10 @@ export class ProductDto {
   @IsNumber()
   quantity: number;
 
+  @ApiProperty({ example: 1 })
+  @IsNumber()
+  typeId: number;
+
   @ApiProperty({ example: [1] })
   @IsNumber()
   @ArrayMinSize(1)
