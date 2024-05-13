@@ -50,9 +50,15 @@ export class GetProductResponse {
 
   @ApiProperty({
     example: 5,
+    description: 'Product type id'
+  })
+  typeId: number;
+
+  @ApiProperty({
+    example: 5,
     description: 'The category ID to which the product belongs'
   })
-  categoryId: number;
+  categoryIds: number[];
 
   @ApiProperty({
     example: 10,

@@ -26,6 +26,11 @@ export class ProductDto {
   @IsString()
   description: string;
 
+  @ApiPropertyOptional({ example: 1 })
+  @IsOptional()
+  @IsString()
+  price: number;
+
   @ApiProperty({ example: ['string'] })
   @IsString({ each: true })
   @ArrayMinSize(1)
