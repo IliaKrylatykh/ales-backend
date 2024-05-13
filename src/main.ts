@@ -10,6 +10,7 @@ async function bootstrap() {
   app.enableCors();
 
   app.use('/api/image', express.static('db/images'));
+  app.use('/api/imageComp', express.static('db/imagesComp'));
 
   const config = new DocumentBuilder()
     .setTitle('Ales')
